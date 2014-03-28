@@ -164,7 +164,7 @@ html, body { background: #111111; height: 100%; }
 
 .main .back, .header .logo, .header .slogan { font-family: "Futura", "Futura-Medium","Arial", sans-serif; font-weight: normal; }
 
-body { font-family: "PalatinoLinotype-Roman", "Palatino-Roman", "TimesNewRomanPSMT", "Times", serif; }
+body { font-family: "Palatino Linotype", "PalatinoLinotype-Roman", "Palatino-Roman", "TimesNewRomanPSMT", "Times", serif; }
 
 body { -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; color: #e4e4e3; }
 
@@ -257,11 +257,11 @@ img { max-width: 100%; margin-bottom: 24px; }
   .menu-list a:after { position: relative; top: -.1em; color: #e4e4e3; }
   .menu-list a:hover, .menu-list a.active { background: rgba(220, 221, 222, 0.3); }
   .menu-list a.active { text-decoration: underline; } }
-.menu-list .social { overflow: hidden; background: #dcddde; margin: 0; padding: 0; border: 0; list-style: none; padding-top: 12px; }
-.menu-list .social h2 { background: #111111; margin: 0; padding: 0; border: 0; font-weight: normal; padding: 0 15px; font-size: 12px; line-height: 24px; }
+.menu-list .social { overflow: hidden; background: #dcddde; margin: 0; padding: 0; border: 0; list-style: none; }
+.menu-list .social h2 { margin: 0; padding: 0; border: 0; padding: 0 15px; background: rgba(17, 17, 17, 0.2); font-weight: normal; font-size: 12px; line-height: 24px; }
 .menu-list .social li { width: 50%; float: left; }
 .menu-list .social a:after { float: none; top: 0; }
-@media (min-width: 800px) { .menu-list .social { background: transparent; } }
+@media (min-width: 800px) { .menu-list .social { margin-top: 24px; background: transparent; } }
 
 .timeline { position: relative; width: 97%; float: right; }
 @media (min-width: 480px) { .timeline { float: none; width: 95%; margin: 0 auto; } }
@@ -282,7 +282,7 @@ img { max-width: 100%; margin-bottom: 24px; }
 .timeline-item .image { margin-bottom: 24px; position: relative; padding-top: 75%; }
 .timeline-item .image img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; margin-bottom: 0px; }
 @media (min-width: 800px) { .timeline-item { padding-left: 20px; }
-  .timeline-item .date { float: left; }
+  .timeline-item .date { float: left; padding-right: 3em; }
   .timeline-item .title { padding-left: 0; }
   .timeline-item .time { float: left; } }
 
@@ -292,7 +292,8 @@ img { max-width: 100%; margin-bottom: 24px; }
 @media (min-width: 800px) { .photo-item-group { padding-top: 0; } }
 
 .photo-item { margin-bottom: 48px; text-align: left; }
-.photo-item .photo img { margin: 0 auto; }
+.photo-item .photo { position: relative; padding-top: 75%; }
+.photo-item .photo img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; margin-bottom: 0px; }
 .photo-item .text { font-size: 15px; line-height: 24px; }
 
 .video-item-group { padding-top: 12px; }
@@ -302,3 +303,15 @@ img { max-width: 100%; margin-bottom: 24px; }
 .video-item .video { margin-bottom: 6px; position: relative; width: 100%; height: 0; padding-top: 56.25%; background: #444; }
 .video-item .video iframe, .video-item .video video { position: absolute; top: 0; left: 0; width: 100% !important; height: 100% !important; }
 .video-item .text { font-size: 15px; line-height: 24px; }
+
+.press-item { margin-bottom: 60px; }
+.press-item:after { content: ""; display: table; clear: both; }
+@media (min-width: 800px) { .press-item { margin-top: 72px; margin-bottom: 96px; } }
+.press-item blockquote { margin-bottom: 12px; font-size: 15px; line-height: 24px; padding-left: 0; border-left: none; }
+@media (min-width: 800px) { .press-item blockquote { font-size: 20px; line-height: 36px; } }
+.press-item cite { font-style: normal; text-align: right; float: right; font-size: 13px; line-height: 24px; }
+.press-item cite:before { content: '—'; margin-right: 8px; color: #a8aaad; }
+.press-item cite a { color: #999999; }
+.press-item cite a:hover { color: #e4e4e3; }
+.press-item cite span { white-space: nowrap; }
+@media (min-width: 800px) { .press-item cite { font-size: 15px; line-height: 24px; } }
